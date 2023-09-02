@@ -1,1 +1,213 @@
-Hello world!
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Handcrafted Canelés | Canelé Boy</title>
+    </head>
+    <body>
+        <canvas id="confetti"></canvas>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Canelé <span>Boy</span>
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Steps</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Canelés. <br> The joy of the culinary world.
+                        </h1>
+                        <p class="home__description">
+                            Canelés are delectable French pastries from Bordeaux, featuring a crunchy exterior and a contrastingly soft and tender center.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Learn more <i class="ri-arrow-right-down-line button__icon button__icon__x"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            About
+                        </h2>
+
+                        <p class="about__description">
+                            Canelé Boy is a Seattle-based small business with the goal of giving as many people as possible a taste of heaven. 
+                        </p>
+
+                        <a href="#products" class="button--link button--flex">
+                            
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="steps section container" id="products">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        3 simple steps
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Choose a plan</h3>
+                            <p class="steps__card-description">
+                                Choose from <span>4 canelés for $9, 12 for $20 or 20 for $30.</span> Please contact me for custom orders.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Place an order</h3>
+                            <p class="steps__card-description">
+                                Canelés require <span>24 hours</span> of preparation. Please notify me in advance so I will have time to bake them. 
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Pickup or Delivery</h3>
+                            <p class="steps__card-description">
+                                You may either pick up your treats or, for NE Seattlites, have me deliver them straight to your door for $5.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Sounds good? <br> Reach out today for <br><span>20% off</span> your first order!
+                        </h2>
+
+                        <div class="contact__data">
+
+                            <div class="contact__information">
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    eitanlebras@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button onclick="alert()" class="button button--flex" id="confetti__button">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+
+                    <h3 class="footer__title merch">
+                        🎉 I've got merch! View the sale <span class="merch__span"><a href="shop.caneleboy.com">here</a></span>
+                    </h3>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Pickup / Delivery Hours</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">School year - Sat and Sun from 9-6</li>
+                        <li class="footer__information">Summer - Mon through Sun from 8-7</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Me</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">eitanlebras@gmail.com</li>
+                    </ul>
+                </div>
+                
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Eitan L. All rights reserved.</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="scrollreveal.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
