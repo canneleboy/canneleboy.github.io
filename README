@@ -1,0 +1,11 @@
+# Step 0: Check status of repo
+git status --verbose
+
+# Step 1: Add new files
+git add *
+
+# Step 1: Commit your changes
+git commit -am "My changes"
+
+# Step 2: Push your changes
+git push origin main

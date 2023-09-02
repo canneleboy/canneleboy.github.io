@@ -1,12 +1,8 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-/*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem; /*56px*/
+  --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 8;
   --first-color: hsl(var(--hue), 24%, 32%);
   --first-color-alt: hsl(var(--hue), 24%, 28%);
@@ -18,8 +14,6 @@
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
@@ -29,12 +23,9 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
   --font-medium: 300;
   --font-semi-bold: 400;
 
-  /*========== Margenes Bottom ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
   --mb-1: 1rem;
@@ -42,12 +33,10 @@
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
 
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* Responsive typography */
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -60,7 +49,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 *{
   box-sizing: border-box;
   padding: 0;
@@ -83,7 +71,7 @@ body{
   margin: var(--header-height) 0 0 0;
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
 button{
@@ -110,8 +98,6 @@ img{
   height: auto;
 }
 
-/*=============== THEME ===============*/
-/*========== Variables Dark theme ==========*/
 body.dark-theme{
   --first-color-dark: hsl(var(--hue), 24%, 32%);
   --title-color: hsl(var(--hue), 4%, 95%);
@@ -121,7 +107,6 @@ body.dark-theme{
   --scrollbar-dark: hsl(var(--hue), 0%, 100%);
 }
 
-/*========== Button Dark/Light ==========*/
 .change-theme{
   color: var(--title-color);
   font-size: 1.15rem;
@@ -134,26 +119,14 @@ body.dark-theme{
   column-gap: 1rem;
 }
 
-/*========== 
-Color changes in some parts of 
-the website, in dark theme 
-==========*/
-
-.dark-theme .steps__bg,
-.dark-theme .questions{
+.dark-theme .steps__bg {
   background-color: var(--first-color-dark);
-}
-
-.dark-theme .product__circle,
-.dark-theme .footer__subscribe{
-  background-color: var(--container-color);
 }
 
 .dark-theme .scroll-header{
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, .3);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .section{
   padding: 5.5rem 0 1rem;
 }
@@ -180,10 +153,9 @@ the website, in dark theme
 }
 
 .main{
-  overflow: hidden; /*For animation*/
+  overflow: hidden;
 }
 
-/*=============== HEADER ===============*/
 .header{
   width: 100%;
   background-color: var(--body-color);
@@ -191,10 +163,9 @@ the website, in dark theme
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  transition: .4s; /*For animation dark mode*/
+  transition: .4s;
 }
 
-/*=============== NAV ===============*/
 .nav{
   height: var(--header-height);
   display: flex;
@@ -273,17 +244,14 @@ the website, in dark theme
   color: var(--first-color);
 }
 
-/* Show menu */
 .show-menu{
   right: 0;
 }
 
-/* Change background header */
 .scroll-header{
   box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, .1);
 }
 
-/* Active link */
 .active-link{
   position: relative;
   color: var(--first-color);
@@ -299,7 +267,6 @@ the website, in dark theme
   background-color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
 .home{
   padding: 3.5rem 0 2rem;
 }
@@ -361,7 +328,6 @@ the website, in dark theme
   transform: translateY(.1rem);
 }
 
-/*=============== ABOUT ===============*/
 .about__container{
   row-gap: 2rem;
 }
@@ -397,7 +363,6 @@ the website, in dark theme
   margin-top: .15rem;
 }
 
-/*=============== STEPS ===============*/
 .steps__bg{
   background-color: var(--first-color);
   padding: 3rem 2rem 2rem;
@@ -445,148 +410,6 @@ the website, in dark theme
   transform: translateY(-.25rem);
 }
 
-/*=============== PRODUCTS ===============*/
-.product__description{
-  text-align: center;
-}
-
-.product__container{
-  padding: 3rem 0;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem 3rem;
-}
-
-.product__card{
-  display: grid;
-  position: relative;
-}
-
-.product__img{
-  position: relative;
-  width: 120px;
-  justify-self: center;
-  margin-bottom: var(--mb-0-75);
-  transition: .3s;
-}
-
-.product__title,
-.product__price{
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.product__title{
-  margin-bottom: .25rem;
-}
-
-.product__button{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  color: #FFF;
-  padding: .25rem;
-  border-radius: .35rem;
-  font-size: 1.15rem;
-}
-
-.product__button:hover{
-  background-color: var(--first-color-alt);
-}
-
-.product__circle{
-  width: 90px;
-  height: 90px;
-  background-color: var(--first-color-lighten);
-  border-radius: 50%;
-  position: absolute;
-  top: 18%;
-  left: 5%;
-}
-
-.product__card:hover .product__img{
-  transform: translateY(-.5rem);
-}
-
-/*=============== QUESTIONS ===============*/
-.questions{
-  background-color: var(--first-color-lighten);
-}
-
-.questions__container{
-  gap: 1.5rem;
-  padding: 1.5rem 0;
-}
-
-.questions__group{
-  display: grid;
-  row-gap: 1.5rem;
-}
-
-.questions__item{
-  background-color: var(--container-color);
-  border-radius: .25rem;
-}
-
-.questions__item-title{
-  font-size: var(--small-font-size);
-  font-weight: var(--font-medium);
-}
-
-.questions__icon{
-  font-size: 1.25rem;
-  color: var(--title-color);
-}
-
-.questions__description{
-  font-size: var(--smaller-font-size);
-  padding: 0 1.25rem 1.25rem 2.5rem;
-}
-
-.questions__header{
-  display: flex;
-  align-items: center;
-  column-gap: .5rem;
-  padding: .75rem .5rem;
-  cursor: pointer;
-}
-
-.questions__content{
-  overflow: hidden;
-  height: 0;
-}
-
-.questions__item,
-.questions__header,
-.questions__item-title,
-.questions__icon,
-.questions__description,
-.questions__content{
-  transition: .3s;
-}
-
-.questions__item:hover{
-  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
-}
-
-/*Rotate icon, change color of titles and background*/
-.accordion-open .questions__header,
-.accordion-open .questions__content{
-  background-color: var(--first-color);
-}
-
-.accordion-open .questions__item-title,
-.accordion-open .questions__description,
-.accordion-open .questions__icon{
-  color: #FFF;
-}
-
-.accordion-open .questions__icon{
-  transform: rotate(45deg);
-}
-
-/*=============== CONTACT ===============*/
 .contact__container{
   row-gap: 3.5rem;
 }
@@ -662,7 +485,6 @@ the website, in dark theme
   resize: none;
 }
 
-/*Input focus move up label*/
 .contact__input:focus + .contact__label{
   top: -.75rem;
   left: 0;
@@ -670,14 +492,12 @@ the website, in dark theme
   z-index: 10;
 }
 
-/*Input focus sticky top label*/
 .contact__input:not(:placeholder-shown).contact__input:not(:focus) + .contact__label{
   top: -.75rem;
   font-size: var(--smaller-font-size);
   z-index: 10;
 }
 
-/*=============== FOOTER ===============*/
 .footer__container{
   row-gap: 3rem;
 }
@@ -694,35 +514,9 @@ the website, in dark theme
   transition: .3s;
 }
 
-.footer__logo-icon{
-  font-size: 1.15rem;
-  color: var(--first-color);
-}
-
-.footer__logo:hover{
-  color: var(--first-color);
-}
-
 .footer__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
-}
-
-.footer__subscribe{
-  background-color: var(--first-color-lighten);
-  padding: .75rem;
-  display: flex;
-  justify-content: space-between;
-  border-radius: .5rem;
-}
-
-.footer__input{
-  width: 70%;
-  padding: 0 .5rem;
-  background: none;
-  color: var(--text-color);
-  border: none;
-  outline: none;
 }
 
 .footer__button{
@@ -738,30 +532,6 @@ the website, in dark theme
   font-size: var(--small-font-size);
 }
 
-.footer__social{
-  display: inline-flex;
-  column-gap: .75rem;
-}
-
-.footer__social-link{
-  font-size: 1rem;
-  color: var(--text-color);
-  transition: .3s;
-}
-
-.footer__social-link:hover{
-  transform: translateY(-.25rem);
-}
-
-.footer__cards{
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
-}
-.footer__card{
-  width: 35px;
-}
-
 .footer__copy{
   text-align: center;
   font-size: var(--smaller-font-size);
@@ -769,7 +539,6 @@ the website, in dark theme
   margin: 5rem 0 1rem;
 }
 
-/*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
   background-color: var(--first-color-alt);
@@ -793,12 +562,10 @@ the website, in dark theme
   opacity: 1;
 }
 
-/* Show Scroll Up*/
 .show-scroll{
   bottom: 3rem;
 }
 
-/*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
   width: .4rem;
   color: var(--scrollbar-dark);
@@ -809,8 +576,6 @@ the website, in dark theme
   border-radius: 20rem;
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 320px){
   .container{
     margin-left: var(--mb-1);
@@ -830,30 +595,11 @@ the website, in dark theme
   .steps__card{
     padding: 1.5rem;
   }
-
-  .product__container{
-    grid-template-columns: .6fr;
-    justify-content: center;
-  }
 }
 
-/* For medium devices */
 @media screen and (min-width: 576px){
   .steps__container{
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .product__description{
-    padding: 0 4rem;
-  }
-  .product__container{
-    grid-template-columns: repeat(2, 170px);
-    justify-content: center;
-    column-gap: 5rem;
-  }
-
-  .footer__subscribe{
-    width: 400px;
   }
 }
 
@@ -900,19 +646,11 @@ the website, in dark theme
     top: 30%;
   }
 
-  .questions__container{
-    align-items: flex-start;
-  }
-
   .footer__container{
     column-gap: 3rem;
   }
-  .footer__subscribe{
-    width: initial;
-  }
 }
 
-/* For large devices */
 @media screen and (min-width: 992px){
   .container{
     margin-left: auto;
@@ -951,45 +689,6 @@ the website, in dark theme
     font-size: var(--normal-font-size);
   }
 
-  .product__description{
-    padding: 0 16rem;
-  }
-  .product__container{
-    padding: 4rem 0;
-    grid-template-columns: repeat(3, 185px);
-    gap: 4rem 6rem;
-  }
-  .product__img{
-    width: 160px;
-  }
-  .product__circle{
-    width: 110px;
-    height: 110px;
-  }
-  .product__title,
-  .product__price{
-    font-size: var(--normal-font-size);
-  }
-
-  .questions__container{
-    padding: 1rem 0 4rem;
-  }
-  .questions__title{
-    text-align: initial;
-  }
-  .questions__group{
-    row-gap: 2rem;
-  }
-  .questions__header{
-    padding: 1rem;
-  }
-  .questions__description{
-    padding: 0 3.5rem 2.25rem 2.75rem;
-  }
-
-  .footer__logo{
-    font-size: var(--h3-font-size);
-  }
   .footer__container{
     grid-template-columns: 1fr .5fr .5fr .5fr;
   }
@@ -999,21 +698,6 @@ the website, in dark theme
 }
 
 @media screen and (min-width: 1200px){
-  .home__social{
-    right: -3rem;
-    row-gap: 4.5rem;
-  }
-  .home__social-follow{
-    font-size: var(--small-font-size);
-  }
-  .home__social-follow::after{
-    width: 1.5rem;
-    right: -60%;
-  }
-  .home__social-link{
-    font-size: 1.15rem;
-  }
-
   .about__container{
     column-gap: 7rem;
   }
