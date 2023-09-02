@@ -383,7 +383,7 @@ body.dark-theme{
   padding: 2.5rem 3rem 2rem 1.5rem;
   border-radius: 1rem;
   cursor: pointer;
-  box-shadow: -10px 0 10px hsla(var(--hue), 24%, 15%, .8);
+  box-shadow: -5px 0 5px hsla(var(--hue), 24%, 15%, .8);
 }
 
 .steps__card-number{
