@@ -735,3 +735,7 @@ a i {
   width: 7%;
   margin-top: 10px;
 }
+
+.scrollup{
+  cursor: pointer;
+}

@@ -38,7 +38,6 @@
                 </div>
 
                 <div class="nav__btns">
-                    <!-- Theme change button -->
                     <i class="ri-moon-line change-theme" id="theme-button"></i>
 
                     <div class="nav__toggle" id="nav-toggle">
@@ -58,7 +57,7 @@
                             Cannelés. <br> The joy of the culinary world.
                         </h1>
                         <p class="home__description">
-                            Cannelés are delectable French pastries from Bordeaux, featuring a crunchy exterior and a contrastingly soft and tender center.
+                            Cannelés are delectable French pastries from Bordeaux, featuring a crunchy exterior and a contrastingly soft and tender center. Cannelé Boy cannelés use only the finest organic ingredients.
                         </p>
                         <a href="#about" class="button button--flex">
                             Learn more <i class="ri-arrow-right-down-line button__icon button__icon__x"></i>
@@ -142,7 +141,7 @@
                     <form action="" method="post" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
+                                <input oninvalid="this.setCustomValidity('Please Enter valid email')" oninput="setCustomValidity('')" type="email" placeholder=" " class="contact__input">
                                 <label for="" class="contact__label">Email</label>
                             </div>
 
