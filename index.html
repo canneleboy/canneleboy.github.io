@@ -138,16 +138,11 @@
                         </div>
                     </div>
 
-                    <form action="" method="post" class="contact__form">
+                    <form action="https://formspree.io/f/mzblglzj" method="post" class="contact__form">
                         <div class="contact__inputs">
                             <div class="contact__content">
                                 <input oninvalid="this.setCustomValidity('Please Enter valid email')" oninput="setCustomValidity('')" type="email" placeholder=" " class="contact__input">
                                 <label for="" class="contact__label">Email</label>
-                            </div>
-
-                            <div class="contact__content">
-                                <input type="text" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label">Subject</label>
                             </div>
 
                             <div class="contact__content contact__area">
@@ -156,7 +151,7 @@
                             </div>
                         </div>
 
-                        <button onclick="alert()" class="button button--flex" id="confetti__button">
+                        <button onclick="sendEmail()" type="submit" class="button button--flex" id="confetti__button">
                             Send Message
                             <i class="ri-arrow-right-up-line button__icon"></i>
                         </button>
@@ -204,5 +199,6 @@
         <script src="scrollreveal.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
