@@ -697,7 +697,7 @@ body.dark-theme{
     grid-template-columns: 1fr .5fr .5fr .5fr;
   }
   .footer__copy{
-    margin: 7rem 0 1rem;
+    margin: 7rem 0 2rem;
   }
 }
 
