@@ -739,3 +739,10 @@ a i {
 .scrollup{
   cursor: pointer;
 }
+
+.home__img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
