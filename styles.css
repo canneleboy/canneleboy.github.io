@@ -218,6 +218,10 @@ body.dark-theme{
     transition: .3s;
     z-index: var(--z-fixed);
   }
+
+  .home__img {
+    margin-bottom: 50px;
+  }
 }
 
 .nav__close{
