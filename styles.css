@@ -752,5 +752,5 @@ a i {
 }
 
 .about__description em {
-  color: #000;
+  color: var(--text-color);
 }
