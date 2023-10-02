@@ -751,6 +751,8 @@ a i {
   border-radius: 50%;
 }
 
-.about__description em {
-  color: var(--text-color);
+.about__container a {
+  color: var(--first-color);
+  text-decoration: underline;
+  text-underline-position: under;
 }
