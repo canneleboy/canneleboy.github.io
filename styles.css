@@ -750,3 +750,7 @@ a i {
   height: 300px;
   border-radius: 50%;
 }
+
+.about__description em {
+  color: #000;
+}
