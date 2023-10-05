@@ -801,6 +801,6 @@ a i {
   text-justify: distribute;
 }
 
-#l {
+#l { 
   color: var(--first-color);
 }
