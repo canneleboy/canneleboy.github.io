@@ -314,7 +314,6 @@ body.dark-theme{
 }
 
 .button:hover .button__icon__x{
-  transform: translateX(.1rem);
 }
 
 .button--flex{
@@ -801,6 +800,9 @@ a i {
   text-justify: distribute;
 }
 
-#l { 
+.contact__information i { 
   color: var(--first-color);
 }
+
+
+
