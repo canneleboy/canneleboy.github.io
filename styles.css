@@ -800,3 +800,7 @@ a i {
 .about__description, .home__description, .limited, .footer__data {
   text-justify: distribute;
 }
+
+#l {
+  color: var(--first-color);
+}
