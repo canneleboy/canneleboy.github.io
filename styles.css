@@ -749,10 +749,56 @@ a i {
   width: 300px;
   height: 300px;
   border-radius: 50%;
+
+}
+
+.about__img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+
 }
 
 .about__container a {
   color: var(--first-color);
   text-decoration: underline;
   text-underline-position: under;
+}
+
+.xa, .xb {
+  border-radius: 50%;
+  width:200px;
+  height:200px;
+  object-fit:cover;
+  margin-left: 10px;
+}         
+
+#si {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit:cover;
+  margin-left: 10px;
+}
+
+.xx, .xxa {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.limited {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.about__description, .home__description, .limited, .footer__data {
+  text-justify: distribute;
+}
+
+.steps__card li  {
+  display: inline-flex;
 }
