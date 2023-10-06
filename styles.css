@@ -313,9 +313,6 @@ body.dark-theme{
   transition: .3s;
 }
 
-.button:hover .button__icon__x{
-}
-
 .button--flex{
   display: inline-flex;
   align-items: center;
