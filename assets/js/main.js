@@ -155,7 +155,7 @@ confetti__button.addEventListener('mouseover', () => {
 })
 
 jsConfetti.addConfetti({
-    emojis: ['😍', '💣'],
+    emojis: ['😍', '💣', '🤪'],
  })
 
 
