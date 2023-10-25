@@ -141,14 +141,21 @@ sr.reveal(`.about__img, .contact__box`,{origin: 'left'})
 sr.reveal(`.about__data, .contact__form`,{origin: 'right'})
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 100})
 
-
 const confetti__button = document.querySelector('#confetti__button');
-const canvas = document.querySelector('#confetti');
+const canvas = document.getElementById('#confetti');
 
-const jsConfetti = new JSConfetti();
 
-confetti__button.addEventListener('onclick', () => {
-    alert("Message submitted successfully!");
+const jsConfetti = new JSConfetti()
+
+jsConfetti.addConfetti()
+
+
+confetti__button.addEventListener('mouseover', () => {
+    jsConfetti();
 })
+
+jsConfetti.addConfetti({
+    emojis: ['😍', '💣'],
+ })
 
 
